@@ -1,0 +1,65 @@
+:root {
+  --color-white: #ffffff;
+  /* --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-black: #4d4d4d;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+    --color-begie: #e0cb6e; */
+
+  --font-large: 80px;
+  --font-medium: 60px;
+  /* --font-reguiar: 60px; */
+  --font-small: 20px;
+  --font-micro: 10px;
+
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  --size-border-radius: 4px;
+
+  --animation-duration: 200ms;
+}
+
+body {
+  background-image: url("/image/bg.jpg");
+}
+
+#head {
+  text-align: center;
+  margin-top: 250px;
+}
+
+h1 {
+  font-size: var(--font-large);
+}
+
+h4 {
+  font-size: var(--font-small);
+}
+.head__title {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.head__description {
+  color: var(--color-white);
+}
+
+.head__arrow {
+  font-size: var(--font-medium);
+  color: var(--color-white);
+}
+
+#navbar {
+  margin-top: 100px;
+}
