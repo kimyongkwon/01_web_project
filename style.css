@@ -1,5 +1,9 @@
 :root {
   --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #feb546;
+  --color-navbar-background: #635b59;
+  --color-navbar-hover-background: #555251;
   /* --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
@@ -17,7 +21,7 @@
 
   --font-large: 80px;
   --font-medium: 60px;
-  /* --font-reguiar: 60px; */
+  --font-reguiar: 30px;
   --font-small: 20px;
   --font-micro: 10px;
 
@@ -32,6 +36,12 @@
 
 body {
   background-image: url("/image/bg.jpg");
+}
+
+.section {
+  /* padding: 50px; */
+  /* text-align: center; */
+  margin: auto;
 }
 
 #head {
@@ -61,5 +71,46 @@ h4 {
 }
 
 #navbar {
+}
+
+.navbar__menu {
+  width: 1500px;
+  height: 58.66px;
+  background-color: var(--color-navbar-background);
+
+  display: flex;
+  margin: auto;
+
+  /* 반대축 아이템을 어디에 놓을지 정한다. 현재 상황에서 반대축은 y축 */
+  align-items: center;
+
   margin-top: 100px;
+}
+
+.navbar__menu__item {
+  background-color: var(--color-navbar-background);
+  color: var(--color-white);
+  border: 0px;
+
+  padding: 0px 16px;
+  height: 100%;
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-navbar-hover-background);
+}
+
+.navbar__menu__item.active {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.navbar__contact {
+  margin-left: 800px;
+}
+
+.navbar__contact i {
+  font-size: var(--font-reguiar);
+  margin: 0px 16px;
+  color: var(--color-white);
 }
