@@ -41,7 +41,7 @@ body {
 .section {
   /* padding: 50px; */
   /* text-align: center; */
-  margin: auto;
+  /* margin: auto; */
 }
 
 #head {
@@ -113,4 +113,29 @@ h4 {
   font-size: var(--font-reguiar);
   margin: 0px 16px;
   color: var(--color-white);
+}
+
+#main {
+  background-color: var(--color-white);
+  width: 1500px;
+  height: 3000px;
+
+  margin: auto;
+}
+
+.main__head {
+  text-align: center;
+}
+
+.main__head__description {
+  line-height: 200%;
+}
+
+.main__head__days {
+  font-size: var(--font-small);
+  padding-top: 120px;
+}
+
+.main__head__image {
+  padding-top: 100px;
 }
