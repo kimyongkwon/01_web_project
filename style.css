@@ -59,8 +59,13 @@ h4 {
 }
 
 .disappear {
-  transform: translateY(25%);
+  transform: translateY(20%);
   opacity: 0;
+}
+
+.appear {
+  transform: translateY(-10%);
+  opacity: 1;
 }
 
 .head__title {
@@ -81,7 +86,7 @@ h4 {
 }
 
 .navbar__menu {
-  width: 1500px;
+  width: 80%;
   height: 58.66px;
   background-color: var(--color-navbar-background);
 
@@ -99,7 +104,9 @@ h4 {
   color: var(--color-white);
   border: 0px;
 
-  padding: 0px 16px;
+  margin: 0 0;
+  padding: 0 0;
+  width: 20%;
   height: 100%;
 }
 
@@ -126,7 +133,9 @@ h4 {
 }
 
 .navbar__contact {
-  margin-left: 800px;
+  width: 80%;
+  text-align: right;
+  /* margin-left: 800px; */
 }
 
 .navbar__contact i {
@@ -137,7 +146,7 @@ h4 {
 
 #main {
   background-color: var(--color-white);
-  width: 1500px;
+  width: 80%;
   height: 3000px;
 
   margin: auto;
