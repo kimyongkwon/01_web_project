@@ -2,22 +2,9 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-orange: #feb546;
+  --color-blue: #43c5e6;
   --color-navbar-background: #635b59;
   --color-navbar-hover-background: #555251;
-  /* --color-white: #ffffff;
-    --color-light-white: #eeeeee;
-    --color-dark-white: #bdbdbd;
-    --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
-    --color-black: #4d4d4d;
-    --color-dark-grey: #4d4d4d;
-    --color-grey: #616161;
-    --color-light-grey: #7c7979;
-    --color-blue: #73aace;
-    --color-yellow: #fff7d1;
-    --color-orange: #feb546;
-    --color-black: #000000;
-    --color-begie: #e0cb6e; */
 
   --font-large: 80px;
   --font-medium: 60px;
@@ -55,16 +42,17 @@ h4 {
 #head {
   text-align: center;
   margin-top: 250px;
+  margin-bottom: 120px;
   transition: all var(--animation-duration) ease;
 }
 
 .disappear {
-  transform: translateY(20%);
+  transform: translateY(10%);
   opacity: 0;
 }
 
 .appear {
-  transform: translateY(-10%);
+  transform: translateY(-5%);
   opacity: 1;
 }
 
@@ -74,7 +62,18 @@ h4 {
 }
 
 .head__description {
+  font-style: oblique;
+  line-height: 40px;
   color: var(--color-white);
+}
+
+.head__description a {
+  color: var(--color-white);
+  text-decoration: underline dotted;
+}
+
+.head__description a:hover {
+  color: var(--color-blue);
 }
 
 .head__arrow {
@@ -82,12 +81,55 @@ h4 {
   color: var(--color-white);
 }
 
+.head__arrow i:hover {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.header__content {
+  position: absolute;
+  opacity: 0;
+  border: 5px solid var(--color-white);
+  color: var(--color-white);
+  text-align: center;
+  width: 12%;
+
+  top: 600px;
+  left: 43.5%;
+  line-height: 10px;
+  margin: auto;
+  transition: all var(--animation-duration) ease;
+}
+
+.header__content h2 {
+  font-size: 30px;
+}
+
+.header__content:hover {
+  border: 5px solid var(--color-blue);
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.header__appear {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-30%);
+}
+
+.header__disappear {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(60%);
+}
+
 #navbar {
 }
 
 .navbar__menu {
   width: 80%;
-  height: 58.66px;
+  /* height: 58.66px; */
+  height: 100px;
   background-color: var(--color-navbar-background);
 
   display: flex;
@@ -96,7 +138,7 @@ h4 {
   /* 반대축 아이템을 어디에 놓을지 정한다. 현재 상황에서 반대축은 y축 */
   align-items: center;
 
-  margin-top: 100px;
+  margin-top: -70px;
 }
 
 .navbar__menu__item {
@@ -118,11 +160,6 @@ h4 {
   background-color: var(--color-navbar-hover-background);
 }
 
-/* .navbar__menu__item.active {
-  background-color: var(--color-white);
-  color: var(--color-black);
-} */
-
 .navbar__menu__item:focus {
   outline: none;
 }
@@ -135,6 +172,7 @@ h4 {
 .navbar__contact {
   width: 80%;
   text-align: right;
+  margin-right: 50px;
   /* margin-left: 800px; */
 }
 
@@ -142,6 +180,10 @@ h4 {
   font-size: var(--font-reguiar);
   margin: 0px 16px;
   color: var(--color-white);
+}
+
+.navbar__contact i:hover {
+  color: var(--color-blue);
 }
 
 #main {
