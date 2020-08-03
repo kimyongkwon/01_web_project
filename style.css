@@ -4,6 +4,7 @@
   --color-orange: #feb546;
   --color-blue: #43c5e6;
   --color-grey: #b7c1c4;
+  --color-dark-grey: #707779;
   --color-white-gray: #ecf2f3;
   --color-navbar-background: #635b59;
   --color-navbar-hover-background: #555251;
@@ -37,9 +38,13 @@ h1 {
   font-size: var(--font-large);
 }
 
-h4 {
-  font-size: var(--font-small);
+h3 {
+  font-size: var(--font-reguiar);
 }
+
+/* h4 {
+  font-size: var(--font-small);
+} */
 
 #head {
   text-align: center;
@@ -239,7 +244,7 @@ h4 {
 
 .post article {
   border: thin solid var(--color-grey);
-  height: 800px;
+  height: 950px;
   width: 49.9%;
   border-bottom: none;
 }
@@ -256,6 +261,37 @@ h4 {
 .post article:nth-child(even) {
   border-right: none;
   border-left: none;
+}
+
+.post article {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.post article h4 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.post__article__image {
+  padding: 20px 0px;
+  width: 80%;
+  height: 40%;
+}
+
+.post__article__button {
+  padding-top: 40px;
+}
+
+.post__article__button a {
+  border: solid;
+  padding: 15px 30px;
+  font-size: var(--font-small);
+}
+
+.post__article__button a:hover {
+  color: var(--color-blue);
+  cursor: pointer;
 }
 
 .index {
@@ -294,5 +330,86 @@ h4 {
   height: 25%;
 }
 
-.contact__private__social {
+.contact__sendMessage {
+  /* line-height: 50px; */
+}
+.contact__sendMessage form {
+  /* text-align: center; */
+  padding-left: 80px;
+  padding-top: 40px;
+}
+
+.contact__sendMessage__name {
+  padding-bottom: 20px;
+}
+
+.contact__sendMessage__email {
+  padding-bottom: 20px;
+}
+
+.contact__sendMessage__name input,
+.contact__sendMessage__email input {
+  /* line-height: 40px; */
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contact__sendMessage__message textarea {
+  width: 78%;
+  height: 150px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.contact__sendMessage__name input:focus,
+.contact__sendMessage__email input:focus,
+.contact__sendMessage__message textarea:focus {
+  outline-color: var(--color-blue);
+}
+.contact__sendMessage__name,
+.contact__sendMessage__email,
+.contact__sendMessage__message {
+  line-height: 40px;
+}
+
+.contact__sendMessage__button {
+  /* color: var(--color--grey); */
+  padding-top: 25px;
+}
+
+.contact__sendMessage__button a {
+  color: var(--color-dark-grey);
+  border: 2px solid var(--color-dark-grey);
+  padding: 10px 10px;
+  font-size: 15px;
+}
+
+.contact__sendMessage__button a:hover {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+  cursor: pointer;
+}
+
+/* .contact__private__address div {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0;
+} */
+
+.contact__private__address {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+}
+
+.contact__private__address__k {
+  padding-left: 70px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.contact__private__address__description {
+  line-height: 30px;
 }
