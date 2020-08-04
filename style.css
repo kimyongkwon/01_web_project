@@ -53,6 +53,10 @@ h3 {
   transition: all var(--animation-duration) ease;
 }
 
+.invisible {
+  display: none;
+}
+
 .disappear {
   transform: translateY(10%);
   opacity: 0;
@@ -122,6 +126,11 @@ h3 {
   pointer-events: auto;
   opacity: 1;
   transform: translateY(-30%);
+}
+
+.header__more__appear {
+  opacity: 1;
+  top: 5%;
 }
 
 .header__disappear {
@@ -295,11 +304,36 @@ h3 {
 }
 
 .index {
-  text-align: center;
-  margin: 80px 0px 80px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 150px 0px 150px 0px;
 }
 
-.contact {
+.page,
+.extra {
+  border: 2px solid var(--color-dark-grey);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.page.active {
+  background-color: var(--color-white-gray);
+}
+
+.page:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+/* .page:nth-child(1),
+.page:nth-child(2),
+.page:nth-child(3),
+.page:nth-child(4),
+.page:nth-child(5) {
+  border-right: none;
+} */
+
+#contact {
   display: flex;
   height: 600px;
   background-color: var(--color-white-gray);
@@ -397,12 +431,6 @@ h3 {
   cursor: pointer;
 }
 
-/* .contact__private__address div {
-  display: inline-block;
-  width: 100%;
-  margin: 0 0;
-} */
-
 .contact__private__address,
 .contact__private__phone,
 .contact__private__email,
@@ -415,7 +443,6 @@ h3 {
 
 .contact__private__subject {
   padding-left: 70px;
-  /* padding-right: 50px; */
   padding-bottom: 30px;
 }
 

@@ -39,6 +39,7 @@
         <button
           class="navbar__menu__item selected"
           onclick="location.href='index.html'"
+          data-link="MASSIVELY"
         >
           <!-- <a href="MASSIVELY.html"></a> -->
           THIS IS MASSIVELY
@@ -54,6 +55,7 @@
         <button
           class="navbar__menu__item"
           onclick="location.href='ELEMENTS.html'"
+          data-link="ELEMENTS"
         >
           ELEMENTS REFERENCE
         </button>
@@ -190,14 +192,16 @@
       </section>
 
       <section class="index">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <span class="extra">...</span>
+        <a href="#" class="page">8</a>
+        <a href="#" class="page">9</a>
+        <a href="#" class="page">10</a>
       </section>
 
-      <footer class="contact">
+      <footer id="contact">
         <div class="contact__sendMessage">
           <form>
             <div class="contact__sendMessage__name">

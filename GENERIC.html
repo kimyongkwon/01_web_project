@@ -52,6 +52,7 @@
           <button
             class="navbar__menu__item"
             onclick="location.href='index.html'"
+            data-link="MASSIVELY"
           >
             <!-- <a href="MASSIVELY.html"></a> -->
             THIS IS MASSIVELY
@@ -67,6 +68,7 @@
           <button
             class="navbar__menu__item"
             onclick="location.href='ELEMENTS.html'"
+            data-link="ELEMENTS"
           >
             ELEMENTS REFERENCE
           </button>
@@ -88,28 +90,87 @@
         </div>
       </nav>
 
-    <section id="main">
-      <div class="main__head">
-        <div class="main__head__days">
-          2020-7-19
-        </div>
-        <h1>
-          GENERIC<br />
-          GENERIC
-        </h1>
-        <h4 class="main__head__description">
-          Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-          facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-          amet nullam sed etiam veroeros.
-        </h4>
-        <img
-          src="image/pic01.jpg"
-          alt=""
-          class="main__head__image"
-          width="1200px"
-          height="600px"
-        />
+      <div id="main">
+        
+        <footer id="contact">
+          <div class="contact__sendMessage">
+            <form>
+              <div class="contact__sendMessage__name">
+                <label> name </label> <br />
+                <input type="text" />
+              </div>
+              <div class="contact__sendMessage__email">
+                <label> email </label> <br />
+                <input type="text" />
+              </div>
+              <div class="contact__sendMessage__message">
+                <label> message </label> <br />
+                <textarea> </textarea>
+              </div>
+              <div class="contact__sendMessage__button">
+                <a onclick="location.href='index.html'"><b>SEND MESSAGE</b></a>
+              </div>
+            </form>
+          </div>
+  
+          <div class="contact__private">
+            <div class="contact__private__address">
+              <h4 class="contact__private__subject">
+                ADDRESS
+              </h4>
+              <div class="contact__private__description">
+                1234 Somewhere Road #87257<br />
+                Nashville, TN 00000-0000
+              </div>
+            </div>
+            <div class="contact__private__phone">
+              <h4 class="contact__private__subject">
+                PHONE
+              </h4>
+              <div class="contact__private__description">
+                (000)000-0000
+              </div>
+            </div>
+            <div class="contact__private__email">
+              <h4 class="contact__private__subject">
+                EMAIL
+              </h4>
+              <div class="contact__private__description">
+                info@untitled.tld
+              </div>
+            </div>
+  
+            <div class="contact__private__social">
+              <h4 class="contact__private__subject">
+                SOCIAL
+              </h4>
+              <div class="contact__private__description">
+                <ul>
+                  <li>
+                    <a href="" target="">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-    </section>
   </body>
 </html>
