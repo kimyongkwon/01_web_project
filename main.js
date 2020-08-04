@@ -5,10 +5,12 @@
 
 // });
 
+const headerScrollY = 350;
+
 const head = document.querySelector("#head");
 const header = document.querySelector(".header__content");
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 350) {
+  if (window.scrollY > headerScrollY) {
     head.classList.remove("appear");
     head.classList.add("disappear");
 
@@ -18,7 +20,7 @@ document.addEventListener("scroll", () => {
     // console.log(window.scrollY);
   }
 
-  if (window.scrollY < 350) {
+  if (window.scrollY < headerScrollY) {
     head.classList.remove("disappear");
     head.classList.add("appear");
 

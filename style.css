@@ -330,6 +330,11 @@ h3 {
   height: 25%;
 }
 
+.contact__private__social {
+  border-bottom: none;
+  height: 25%;
+}
+
 .contact__sendMessage {
   /* line-height: 50px; */
 }
@@ -398,18 +403,44 @@ h3 {
   margin: 0 0;
 } */
 
-.contact__private__address {
+.contact__private__address,
+.contact__private__phone,
+.contact__private__email,
+.contact__private__social {
   /* text-align: center; */
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.contact__private__address__k {
+.contact__private__subject {
   padding-left: 70px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   padding-bottom: 30px;
 }
 
-.contact__private__address__description {
+.contact__private__description {
   line-height: 30px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.contact__private__description ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contact__private__description ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.contact__private__description i {
+  color: var(--color-dark-grey);
+  font-size: 25px;
+}
+
+.contact__private__description i:hover {
+  color: var(--color-blue);
 }
