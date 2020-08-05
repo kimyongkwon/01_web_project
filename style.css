@@ -100,7 +100,7 @@ h3 {
   transition: all var(--animation-duration) ease;
 }
 
-.header__content {
+.header__content__word {
   font-size: 140%;
   line-height: 50px;
 }
@@ -119,7 +119,7 @@ h3 {
 
 .header__more__appear {
   opacity: 1;
-  top: 5%;
+  transform: translateY(-200%);
 }
 
 .header__disappear {
