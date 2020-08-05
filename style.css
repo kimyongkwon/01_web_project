@@ -26,12 +26,7 @@
 
 body {
   background-image: url("https://kimyongkwon.github.io/01_web_project/image/bg.jpg");
-}
-
-.section {
-  /* padding: 50px; */
   /* text-align: center; */
-  /* margin: auto; */
 }
 
 h1 {
@@ -41,10 +36,6 @@ h1 {
 h3 {
   font-size: var(--font-reguiar);
 }
-
-/* h4 {
-  font-size: var(--font-small);
-} */
 
 #head {
   text-align: center;
@@ -98,22 +89,20 @@ h3 {
 }
 
 .header__content {
-  position: absolute;
   opacity: 0;
   border: 5px solid var(--color-white);
   color: var(--color-white);
   text-align: center;
-  width: 12%;
+  width: 220px;
+  height: 50px;
 
-  top: 600px;
-  left: 43.5%;
-  line-height: 10px;
   margin: auto;
   transition: all var(--animation-duration) ease;
 }
 
-.header__content h2 {
-  font-size: 30px;
+.header__content {
+  font-size: 140%;
+  line-height: 50px;
 }
 
 .header__content:hover {
@@ -125,7 +114,7 @@ h3 {
 .header__appear {
   pointer-events: auto;
   opacity: 1;
-  transform: translateY(-30%);
+  transform: translateY(-200%);
 }
 
 .header__more__appear {
@@ -136,7 +125,7 @@ h3 {
 .header__disappear {
   pointer-events: none;
   opacity: 0;
-  transform: translateY(60%);
+  transform: translateY(10%);
 }
 
 #navbar {
@@ -325,14 +314,6 @@ h3 {
   color: var(--color-blue);
 }
 
-/* .page:nth-child(1),
-.page:nth-child(2),
-.page:nth-child(3),
-.page:nth-child(4),
-.page:nth-child(5) {
-  border-right: none;
-} */
-
 #contact {
   display: flex;
   height: 600px;
@@ -369,11 +350,7 @@ h3 {
   height: 25%;
 }
 
-.contact__sendMessage {
-  /* line-height: 50px; */
-}
 .contact__sendMessage form {
-  /* text-align: center; */
   padding-left: 80px;
   padding-top: 40px;
 }
@@ -388,7 +365,6 @@ h3 {
 
 .contact__sendMessage__name input,
 .contact__sendMessage__email input {
-  /* line-height: 40px; */
   width: 80%;
   height: 30px;
   padding: 10px;
@@ -414,7 +390,6 @@ h3 {
 }
 
 .contact__sendMessage__button {
-  /* color: var(--color--grey); */
   padding-top: 25px;
 }
 
@@ -435,7 +410,6 @@ h3 {
 .contact__private__phone,
 .contact__private__email,
 .contact__private__social {
-  /* text-align: center; */
   display: flex;
   align-items: center;
   position: relative;
