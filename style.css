@@ -192,6 +192,50 @@ h3 {
   color: var(--color-blue);
 }
 
+.subMenu {
+  position: fixed;
+  top: 2%;
+  left: 92%;
+  background-color: transparent;
+  display: none;
+}
+
+.subMenu a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color-orange);
+}
+
+.subMenu__box {
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  height: 100%;
+  width: 300px;
+  background-color: var(--color-white);
+  transition: all var(--animation-duration) ease;
+}
+
+.subMenu__box__exit {
+  text-align: right;
+  margin: 25px;
+  font-size: 25px;
+}
+
+.subMenu a:hover,
+.subMenu__box__exit a:hover {
+  cursor: pointer;
+  color: var(--color-blue);
+}
+
+.subMenu__appear {
+  transform: translateX(-100%);
+}
+
+.subMenu__disappear {
+  transform: translateX(100%);
+}
+
 #main {
   background-color: var(--color-white);
   width: 80%;
@@ -444,4 +488,25 @@ h3 {
 
 .contact__private__description i:hover {
   color: var(--color-blue);
+}
+
+@media screen and (max-width: 980px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  #main,
+  .header__content {
+    margin-top: -50px;
+  }
+
+  .subMenu {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .subMenu__box {
+    display: none;
+  }
 }
