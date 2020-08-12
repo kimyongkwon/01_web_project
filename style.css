@@ -309,7 +309,7 @@ h3 {
 
 .post article {
   border: thin solid var(--color-grey);
-  height: 950px;
+  height: 1000px;
   width: 49.9%;
   border-bottom: none;
 }
@@ -529,6 +529,14 @@ h3 {
 }
 
 @media screen and (max-width: 980px) {
+  :root {
+    --font-large: 60px;
+    --font-medium: 40px;
+    --font-reguiar: 20px;
+    --font-small: 10px;
+    --font-micro: 5px;
+  }
+
   .navbar__menu {
     display: none;
   }
@@ -544,6 +552,12 @@ h3 {
 
   .post article {
     width: 100%;
+    /* height: 1000px; */
+  }
+
+  .post article h4 {
+    font-size: (var(--font-reguiar));
+    line-height: 30px;
   }
 
   #contact {
@@ -556,6 +570,10 @@ h3 {
     width: 100%;
   }
 
+  .contact__sendMessage form {
+    padding: 30px 50px 30px 60px;
+  }
+
   .contact__private {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -563,13 +581,30 @@ h3 {
     width: 100%;
   }
 
+  .contact__private .contact__private__subject {
+    padding-left: 30px;
+  }
+
+  .contact__sendMessage__button a {
+    padding: 0px 0px;
+    font-size: 10px;
+  }
+  .main__head__days {
+    font-size: var(--font-reguiar);
+  }
+
   .main__head h1 {
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
   }
 
   .main__head__description {
-    font-size: var(--font-small);
+    font-size: var(--font-reguiar);
     line-height: 150%;
+  }
+
+  .page,
+  .extra {
+    padding: 5px 10px 5px 10px;
   }
 }
 
