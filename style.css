@@ -562,6 +562,15 @@ h3 {
     margin-right: 0;
     width: 100%;
   }
+
+  .main__head h1 {
+    font-size: var(--font-medium);
+  }
+
+  .main__head__description {
+    font-size: var(--font-small);
+    line-height: 150%;
+  }
 }
 
 @media screen and (min-width: 980px) {
